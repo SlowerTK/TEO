@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ТЭО</title>
+  <link rel="stylesheet" href="css\style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__nav-link page-header__logo-icon"
+          src="https://www.svgrepo.com/show/524342/calculator-minimalistic.svg" />
+      </a>
+      <nav class="page-header__nav">
+        <a class="page-header__nav-text">Технико-экономическое обоснование</a>
+      </nav>
+      <div class="page-header__right-block">
+        <a href="devop.html" class="page-header__btn btn">Автор</a>
+      </div>
+      <div class="page-header__right-block">
+        <a href="teoriya.html" class="page-header__btn btn">Теория</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="quality" id="quality">
+      <div class="zagol">
+        <p class="zagolovok">
+          Оценка конкурентоспособности проекта в сравнении с аналогом
+        </p>
+      </div>
+      <table>
+        <tbody>
+          <tr class="centr">
+            <td rowspan="2" class="trtr"><b>Показатели качества</b></td>
+            <td rowspan="2" class="trtr">
+              <b>Коэффициент весомости, В<span class="mini">j</span></b>
+            </td>
+            <td colspan="2" class="trtr"><b>Проект</b></td>
+            <td colspan="2" class="trtr"><b>Аналог</b></td>
+          </tr>
+          <tr class="centr">
+            <td class="trtr">
+              <b>X<span class="mini">j</span></b>
+            </td>
+            <td class="trtr">
+              <b>В<span class="mini">j</span> • X<span class="mini">j</span></b>
+            </td>
+            <td class="trtr">
+              <b>X<span class="mini">j</span></b>
+            </td>
+            <td class="trtr">
+              <b>B<span class="mini">j</span> • X<span class="mini">j</span></b>
+            </td>
+          </tr>
+          <tr class="">
+            <td>1. Удобство работы (пользовательский интерфейс)</td>
+            <td>
+              <input min="0" max="1" step="0.01" value="0.14" class="centr" type="number" id="B1" placeholder="0" />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="4" class="centr" type="number" id="X1" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="BX1" placeholder="0" readonly />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="2" class="centr" type="number" id="altX1" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="altBX1" placeholder="0" readonly />
+            </td>
+          </tr>
+          <tr class="">
+            <td>2. Новизна (соответствие современным требованиям)</td>
+            <td>
+              <input min="0" max="1" step="0.01" value="0.1" class="centr" type="number" id="B2" placeholder="0" />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="4" class="centr" type="number" id="X2" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="BX2" placeholder="0" readonly />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="3" class="centr" type="number" id="altX2" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="altBX2" placeholder="0" readonly />
+            </td>
+          </tr>
+          <tr class="">
+            <td>3. Соответствие профилю деятельности заказчика</td>
+            <td>
+              <input min="0" max="1" step="0.01" value="0.2" class="centr" type="number" id="B3" placeholder="0" />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="4" class="centr" type="number" id="X3" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="BX3" placeholder="0" readonly />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="2" class="centr" type="number" id="altX3" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="altBX3" placeholder="0" readonly />
+            </td>
+          </tr>
+          <tr class="">
+            <td>4. Ресурсная эффективность</td>
+            <td>
+              <input min="0" max="1" step="0.01" value="0.05" class="centr" type="number" id="B4" placeholder="0" />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="4" class="centr" type="number" id="X4" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="BX4" placeholder="0" readonly />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="4" class="centr" type="number" id="altX4" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="altBX4" placeholder="0" readonly />
+            </td>
+          </tr>
+          <tr class="">
+            <td>5. Надежность (защита данных)</td>
+            <td>
+              <input min="0" max="1" step="0.01" value="0.13" class="centr" type="number" id="B5" placeholder="0" />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="3" class="centr" type="number" id="X5" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="BX5" placeholder="0" readonly />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="3" class="centr" type="number" id="altX5" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="altBX5" placeholder="0" readonly />
+            </td>
+          </tr>
+          <tr class="">
+            <td>6. Скорость доступа к данным</td>
+            <td>
+              <input min="0" max="1" step="0.01" value="0.1" class="centr" type="number" id="B6" placeholder="0" />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="4" class="centr" type="number" id="X6" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="BX6" placeholder="0" readonly />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="4" class="centr" type="number" id="altX6" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="altBX6" placeholder="0" readonly />
+            </td>
+          </tr>
+          <tr class="">
+            <td>7. Гибкость настройки</td>
+            <td>
+              <input min="0" max="1" step="0.01" value="0.06" class="centr" type="number" id="B7" placeholder="0" />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="3" class="centr" type="number" id="X7" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="BX7" placeholder="0" readonly />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="3" class="centr" type="number" id="altX7" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="altBX7" placeholder="0" readonly />
+            </td>
+          </tr>
+          <tr class="">
+            <td>8. Обучаемость персонала</td>
+            <td>
+              <input min="0" max="1" step="0.01" value="0.13" class="centr" type="number" id="B8" placeholder="0" />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="5" class="centr" type="number" id="X8" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="BX8" placeholder="0" readonly />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="1" class="centr" type="number" id="altX8" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="altBX8" placeholder="0" readonly />
+            </td>
+          </tr>
+          <tr class="">
+            <td>9. Соотношение стоимость/возможности</td>
+            <td>
+              <input min="0" max="1" step="0.01" value="0.09" class="centr" type="number" id="B9" placeholder="0" />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="4" class="centr" type="number" id="X9" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="BX9" placeholder="0" readonly />
+            </td>
+            <td>
+              <input min="1" max="5" step="1" value="2" class="centr" type="number" id="altX9" placeholder="0" />
+            </td>
+            <td>
+              <input class="centr" type="number" id="altBX9" placeholder="0" readonly />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn" onclick="addRow()">
+        Добавить показатель
+      </button>
+      <div>
+        <span class="fifi">Обобщенный показатель качества проекта:</span>
+        <input type="number" value="3.94" id="J1" class="fifi" readonly />
+      </div>
+      <div>
+        <span class="fifi">Обобщенный показатель качества аналога:</span>
+        <input type="number" value="2.46" id="J2" class="fifi" readonly />
+      </div>
+
+      <div class="ety">
+        <ul class="calc-price-title">
+          <li>
+            <span class="fifi">Коэффициент технического совершенства:</span>
+            <input type="number" value="1.60" id="A" class="fifi" readonly />
+          </li>
+        </ul>
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+      <div class="zagol">
+        <p class="zagolovok">
+          Планирование комплекса работ по разработке проекта и оценка
+          трудоемкости
+        </p>
+      </div>
+
+      <table class="">
+        <tr class="">
+          <th class="" rowspan="2">Содержание работы</th>
+          <th class="" rowspan="2">Исполнители</th>
+          <th class="" rowspan="2">Длительность, дни</th>
+          <th class="" colspan="2">График работ</th>
+        </tr>
+        <tr class="">
+          <th class="">Начало</th>
+          <th class="">Конец</th>
+        </tr>
+
+        <tr class="">
+          <th class="" colspan="5">
+            1. Подготовка процесса разработки и анализ требований
+          </th>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">1.1 Постановка задачи</td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_1" min="0" max="100" value="1" step="1" />
+          </td>
+          <td class="" rowspan="2">
+            <input type="date" value="2024-12-01" class="__input centr" id="td1_2" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_3" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_4" min="1" max="100" value="3" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_5" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">1.2 Сбор исходных данных</td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_6" min="0" max="100" value="5" step="1" />
+          </td>
+          <td class="" rowspan="2">
+            <input type="text" value="-" id="td1_7" class="centr" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_8" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_9" min="1" max="100" value="14" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_10" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">
+            1.3 Анализ существующих методов решения задачи и программных
+            средств
+          </td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_11" min="0" max="100" value="0" step="1" />
+          </td>
+          <td class="" rowspan="2">
+            <input type="text" value="-" id="td1_12" class="centr" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_13" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_14" min="1" max="100" value="6" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_15" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">
+            1.4 Обоснование принципиальной необходимости разработки
+          </td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_16" min="0" max="100" value="1" step="1" />
+          </td>
+          <td class="" rowspan="2">
+            <input type="text" value="-" id="td1_17" class="centr" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_18" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_19" min="1" max="100" value="2" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_20" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">
+            1.5 Определение и анализ требований к программе
+          </td>
+          <td class="">Руководитель</td>
+          <td>
+            <input type="number" name="r" class="__input centr" id="td1_21" min="0" max="100" value="1" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" class="__input centr" id="td1_22" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_23" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_24" min="1" max="100" value="3" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_25" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">
+            1.6 Определение структуры входных и выходных данных
+          </td>
+          <td>Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_26" min="0" max="100" value="1" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" class="__input centr" id="td1_27" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_28" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_29" min="1" max="100" value="5" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_30" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">
+            1.7 Выбор технических средств и программных средств реализации
+          </td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_31" min="0" max="100" value="1" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" class="__input centr" id="td1_32" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_33" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_34" min="1" max="100" value="3" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_35" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">
+            1.8 Согласование и утверждение технического задания
+          </td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_36" min="0" max="100" value="1" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" class="__input centr" id="td1_37" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_38" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_39" min="1" max="100" value="3" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_40" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <th class="" colspan="5">2. Проектирование</th>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">
+            2.1 Проектирование программной архитектуры
+          </td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_41" min="0" max="100" value="0" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" class="__input centr" id="td1_42" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_43" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_44" min="1" max="100" value="3" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_45" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">
+            2.2 Техническое проектирование компонентов программы
+          </td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_46" min="0" max="100" value="0" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" id="td1_47" class="centr" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_48" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_49" min="1" max="100" value="7" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_50" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <th class="" colspan="5">
+            3. Программирование и тестирование программных модулей
+          </th>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">
+            3.1 Программирование модулей в выбранной среде программирования
+          </td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_51" min="0" max="100" value="0" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" id="td1_52" class="centr" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_53" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_54" min="1" max="100" value="13" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_55" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="" rowspan="2">3.2 Тестирование программных модулей</td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_56" min="0" max="100" value="0" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" id="td1_57" class="centr" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_58" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_59" min="1" max="100" value="21" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_60" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">3.3 Сборка и испытание</td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_61" min="0" max="100" value="2" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" class="__input centr" id="td1_62" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_63" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_64" min="1" max="100" value="5" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_65" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">3.4 Анализ результатов испытаний</td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_66" min="0" max="100" value="1" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" class="__input centr" id="td1_67" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_68" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_69" min="1" max="100" value="5" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_70" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <th class="" colspan="5">4. Оформление рабочей документации</th>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">
+            4.1 Проведение расчетов показателей безопасности жизнедеятельности
+          </td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_71" min="0" max="100" value="0" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" class="__input centr" id="td1_72" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_73" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_74" min="1" max="100" value="3" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_75" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="" rowspan="2">4.2 Проведение экономических расчетов</td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_76" min="0" max="100" value="0" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" class="__input centr" id="td1_77" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_78" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_79" min="1" max="100" value="4" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_80" class="centr" />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="" rowspan="2">4.3 Оформление пояснительной записки</td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" name="r" class="__input centr" id="td1_81" min="0" max="100" value="5" step="1" />
+          </td>
+          <td rowspan="2">
+            <input type="text" value="-" class="__input centr" id="td1_82" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_83" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" name="p" class="__input centr" id="td1_84" min="1" max="100" value="15" step="1" />
+          </td>
+          <td class="">
+            <input type="text" value="-" id="td1_85" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="" rowspan="2">ИТОГО</td>
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" value="19" id="total-price1" class="fifi" readonly />
+          </td>
+        </tr>
+
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" value="115" id="total-price2" class="fifi" readonly />
+          </td>
+        </tr>
+      </table>
+
+      <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+      <div class="zagol">
+        <p class="zagolovok">Расчет затрат на разработку проекта</p>
+      </div>
+      <div class="input-day">
+        <table>
+          <tr>
+            <td style="text-wrap: nowrap">
+              <span>Количество рабочих дней в месяце:</span>
+            </td>
+            <td>
+              <input type="number" min="1" max="31" value="21" id="col_day" style="width: 100%;  box-sizing: border-box; " class="event_input centr " />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <table class="">
+        <tr class="">
+          <th class="">Должность</th>
+          <th class="">Должностной оклад, руб.</th>
+          <th class="">Средняя дневная ставка, руб.</th>
+          <th class="">Затраты времени на разработку, человеко-дней</th>
+          <th class="">Основная заработная плата, руб</th>
+        </tr>
+        <tr class="">
+          <td class="">Руководитель</td>
+          <td class="">
+            <input type="number" id="i_zp" class="__input centr" min="0" max="1000000" value="19000" />
+          </td>
+          <td class="">
+            <input type="number" value="904.76" id="stavka" class="fifi" readonly />
+          </td>
+          <td>
+            <input type="number" value="19" id="total-price3" class="fifi" readonly />
+          </td>
+          <td>
+            <input type="number" value="17190.44" id="multiply1" class="fifi" readonly />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" id="i_zp2" class="__input centr" min="0" max="1000000" value="7000" />
+          </td>
+          <td class="">
+            <input type="number" value="333.33" id="stavka2" class="fifi" readonly />
+          </td>
+          <td>
+            <input type="number" value="115" id="total-price4" class="fifi" readonly />
+          </td>
+          <td>
+            <input type="number" value="38332.95" id="multiply2" class="fifi" readonly />
+          </td>
+        </tr>
+      </table>
+      <div style="padding: 20px">
+        <span class="fifi">Итого ОЗП(руб.):</span>
+        <input type="number" value="64570.99" id="OZP" class="fifi" readonly />
+      </div>
+      <!-- ------------------------------------------------------------------------------------------------------------- -->
+      <div class="Day">
+        <div class="input-day">
+          <h4>Затраты на дополнительную заработную плату</h4>
+          <div class="Day">
+            <span>Коэффициент отпускных: </span>
+            <input type="number" min="0" max="1" value="0.1" step="0.001" id="coef_otpysk" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Районный коэффициент: </span>
+            <input type="number" min="0" max="1" value="0.3" step="0.001" id="coef_ragion" class="event_input" />
+          </div>
+        </div>
+        <div class="input-day">
+          <h4>Затраты отчисления на социальные нужды</h4>
+          <div class="Day">
+            <span>Страховые взносы в Пенсионный фонд:</span>
+            <input type="number" min="0" max="1" value="0.22" step="0.001" id="coef_PF" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Страховые взносы в ФСС:</span>
+            <input type="number" min="0" max="1" value="0.029" step="0.001" id="coef_FSS" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Страховые взносы в ФФОМС:</span>
+            <input type="number" min="0" max="1" value="0.051" step="0.001" id="coef_FFOMS" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Страховые взносы на производственный травматизм:</span>
+            <input type="number" min="0" max="1" value="0.002" step="0.001" id="coef_travmi" class="event_input" />
+          </div>
+        </div>
+        <div class="input-day">
+          <h4>Затраты на накладные расходы организации</h4>
+          <div class="Day">
+            <span>Коэффициент, учитывающий накладные расходы<br />организации, в
+              долях к основной заработной<br />плате разработчиков:</span>
+            <input type="number" min="0" max="1" value="0.6" step="0.001" id="coef_naclad" class="event_input" />
+          </div>
+        </div>
+        <div class="input-day">
+          <h4>Затраты на машинное время</h4>
+          <div class="Day">
+            <span>Часы ежедневного проведения за компьютером программиста:</span>
+            <input type="number" min="0" max="24" value="4" step="1" id="hours" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Стоимость 1 часа машинного времени:</span>
+            <input type="number" min="1" max="100000" value="20" step="1" id="price_hours" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Коэффициент мультипрограммности:</span>
+            <input type="number" min="0" max="1" value="1" step="0.001" id="coef_multi" class="event_input" />
+          </div>
+        </div>
+        <div class="input-day">
+          <h4>Затраты на реализацию</h4>
+          <div class="Day">
+            <span>Балансовая стоимость оборудования, руб.:</span>
+            <input type="number" min="0" max="1000000" value="22500" step="1" id="balans" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Количество оборудования:</span>
+            <input type="number" min="1" max="100" value="1" step="1" id="col_oborydovania" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Трудоемкость однократной обработки информации<br />по тестовой
+              задаче, часов машинного времени:</span>
+            <input type="number" min="1" max="100" value="6" step="1" id="PM_inf" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Частота решения тестовой задачи, дней /год:</span>
+            <input type="number" min="1" max="366" value="247" step="1" id="chastota" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Количество рабочих дней в году:</span>
+            <input type="number" min="1" max="366" value="247" step="1" id="day_year" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Продолжительность рабочего дня в организации, ч.:</span>
+            <input type="number" min="1" max="24" value="8" step="1" id="hours_day" class="event_input" />
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------------------------------------- -->
+      <table>
+        <tbody id="materialsTable">
+          <tr>
+            <th class="thtd-long">Материалы</th>
+            <th>Единица измерения</th>
+            <th>Требуемое количество</th>
+            <th>Цена за еденицу, руб.</th>
+            <th>Сумма, руб.</th>
+          </tr>
+          <tr>
+            <td class="thtd-long">
+              <input type="text" value="Компакт-диск CD-RW" placeholder="Введите название материала" />
+            </td>
+            <td><input type="text" value="шт." class="centr" /></td>
+            <td>
+              <input type="number" min="1" max="1000" step="1" value="2" class="centr" id="Mx1" />
+            </td>
+            <td>
+              <input type="number" min="1" max="1000" step="1" value="35" class="centr" id="My1" />
+            </td>
+            <td>
+              <input type="number" value="70" name="Msum" class="fifi centr" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td class="thtd-long">
+              <input type="text" value="Тонер для лазерного принтера" placeholder="Введите название материала" />
+            </td>
+            <td><input type="text" value="шт." class="centr" /></td>
+            <td>
+              <input type="number" min="1" max="1000" step="1" value="1" class="centr" id="Mx2" />
+            </td>
+            <td>
+              <input type="number" min="1" max="1000" step="1" value="1000" class="centr" id="My2" />
+            </td>
+            <td>
+              <input type="number" value="1000" name="Msum" class="fifi centr" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td class="thtd-long">
+              <input type="text" value="Бумага офисная" placeholder="Введите название материала" />
+            </td>
+            <td><input type="text" value="пачка" class="centr" /></td>
+            <td>
+              <input type="number" min="1" max="1000" step="1" value="1" class="centr" id="Mx3" />
+            </td>
+            <td>
+              <input type="number" min="1" max="1000" step="1" value="130" class="centr" id="My3" />
+            </td>
+            <td>
+              <input type="number" value="130" name="Msum" class="fifi centr" readonly />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn" onclick="addRow2()">
+        Добавить материал
+      </button>
+      <div>
+        <span class="fifi">Итого затраты на материалы:</span>
+        <input type="number" value="1200" id="ZNM" class="fifi" readonly />
+        <span class="fifi">рублей</span>
+      </div>
+
+      <!-- ------------------------------------------------------------------------------------------------------------------ -->
+      <div class="Day">
+        <div class="input-day_2">
+          <h3>Суммарные затраты на разработку проекта:</h3>
+          <table class="table-pink">
+            <tr>
+              <th class="td2">Статьи затрат</th>
+              <th class="td2">Сумма, руб.</th>
+            </tr>
+            <tr>
+              <td>Основная заработная плата</td>
+              <td>
+                <input type="number" value="55523.39" id="OZP2" class="fifi" name="zatrata" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Дополнительная зарплата</td>
+              <td>
+                <input type="number" value="22209.36" id="DZP" class="fifi" name="zatrata" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Отчисления на социальные нужды</td>
+              <td>
+                <input type="number" value="23475.29" id="ONSN" class="fifi" name="zatrata" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Затраты на материалы</td>
+              <td>
+                <input type="number" value="1200" id="ZNM2" class="fifi" name="zatrata" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Затраты на машинное время</td>
+              <td>
+                <input type="number" value="9200" id="ZNMV" class="fifi" name="zatrata" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Накладные расходы организации</td>
+              <td>
+                <input type="number" value="33314.03" id="NRO" class="fifi" name="zatrata" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Затраты на реализацию</td>
+              <td>
+                <input type="number" value="16875" id="ZNR" class="fifi" name="zatrata" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>ИТОГО:</td>
+              <td>
+                <input type="number" value="161797.07" id="ITOG" class="fifi" readonly />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="input-day_2">
+          <h3>Суммарные затраты по внедрению аналога:</h3>
+          <table class="table-pink">
+            <tr>
+              <th class="td2">Статьи затрат</th>
+              <th class="td2">Сумма, руб.</th>
+            </tr>
+            <tr>
+              <td>Затраты на приобретение программного продукта</td>
+              <td>
+                <input type="number" value="37300" min="0" max="1000000" id="ZNPPP" class="fifi" name="zatrata2" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Затраты по оплате услуг на установку и сопровождение продукта
+              </td>
+              <td>
+                <input type="number" value="12000" min="0" max="1000000" id="ZPOYNYICP" class="fifi" name="zatrata2" />
+              </td>
+            </tr>
+            <tr>
+              <td>Затраты на основное и вспомогательное оборудование</td>
+              <td>
+                <input type="number" value="22500" min="0" max="1000000" id="ZNOIVO" class="fifi" name="zatrata2" />
+              </td>
+            </tr>
+            <tr>
+              <td>Затраты на подготовку пользователя</td>
+              <td>
+                <input type="number" value="9000" min="0" max="1000000" id="ZNPP" class="fifi" name="zatrata2" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>ИТОГО:</td>
+              <td>
+                <input type="number" value="80800" id="ITOG2" class="fifi" readonly />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="zagol">
+        <p class="zagolovok">Расчет эксплуатационных затрат</p>
+      </div>
+
+      <div class="input-day">
+        <div class="Day">
+          <span>Количество рабочих дней в месяце:</span>
+          <input type="number" min="1" max="31" value="21" id="col_day2" class="event_input" />
+        </div>
+        <div class="Day"><span>Районный коэффициент:</span>
+          <input type="number" min="0" max="1" value="0.3" step="0.001" id="coef_ragion2" class="event_input" />
+        </div>
+      </div>
+
+      <table class="">
+        <tr class="">
+          <th class="">Должность</th>
+          <th class="">Должностной оклад, руб.</th>
+          <th class="">Средняя дневная ставка, руб.</th>
+          <th class="">Затраты времени на разработку, человеко-дней</th>
+        </tr>
+        <tr class="">
+          <td class="">Сотрудник отдела-эксплуатанта</td>
+          <td class="">
+            <input type="number" id="zp_s" class="centr" min="0" max="1000000" value="15000" />
+          </td>
+          <td class="">
+            <input type="number" value="714.29" id="stavka_DPZPSP" class="centr" readonly />
+          </td>
+          <td>
+            <input type="number" min="0" max="365" value="40" id="zatrata_time" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" id="zp_p" class="centr" min="0" max="1000000" value="10000" />
+          </td>
+          <td class="">
+            <input type="number" value="476.19" id="stavka_DPZPSP2" class="centr" readonly />
+          </td>
+          <td>
+            <input type="number" min="0" max="365" value="20" id="zatrata_time2" class="centr" />
+          </td>
+        </tr>
+      </table>
+
+      <div>
+        <span class="fifi">Итого данные по заработной плате специалистов (для проекта):</span>
+        <input type="number" value="69440" id="DPZPSP" class="fifi" readonly />
+      </div>
+
+      <table class="">
+        <tr class="">
+          <th class="">Должность</th>
+          <th class="">Должностной оклад, руб.</th>
+          <th class="">Средняя дневная ставка, руб.</th>
+          <th class="">Затраты времени на разработку, человеко-дней</th>
+        </tr>
+        <tr class="">
+          <td class="">Сотрудник отдела-эксплуатанта</td>
+          <td class="">
+            <input type="number" id="zp_sa" class="centr" min="0" max="1000000" value="15000" />
+          </td>
+          <td class="">
+            <input type="number" value="714.29" id="stavka_DPZPSA" class="centr" readonly />
+          </td>
+          <td>
+            <input type="number" min="0" max="365" value="60" id="zatrata_time3" class="centr" />
+          </td>
+        </tr>
+        <tr class="">
+          <td class="">Программист</td>
+          <td class="">
+            <input type="number" id="zp_pa" class="centr" min="0" max="1000000" value="10000" />
+          </td>
+          <td class="">
+            <input type="number" value="476.19" id="stavka_DPZPSA2" class="centr" readonly />
+          </td>
+          <td>
+            <input type="number" min="0" max="365" value="40" id="zatrata_time4" class="centr" />
+          </td>
+        </tr>
+      </table>
+
+      <div>
+        <span class="fifi">Итого данные по заработной плате специалистов (для
+          продукта-аналога):</span>
+        <input type="number" value="112840" id="DPZPSA" class="fifi" readonly />
+      </div>
+
+      <div class="Day">
+        <div class="input-day">
+          <h4>Данные для амортизационных отчислений</h4>
+          <div class="Day">
+            <span>Норма годовых амортизационных отчислений для оборудования:</span>
+            <input type="number" min="0" max="1" value="0.2" step="0.001" id="amortizacia" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Норматив среднесуточной загрузки, час./день:</span>
+            <input type="number" min="0" max="24" value="8" step="1" id="norm_zagryzka" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Балансовая стоимость оборудования, руб.:</span>
+            <input type="number" min="0" max="10000000" value="22500" step="1" id="balans2" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Количество оборудования:</span>
+            <input type="number" min="1" max="100" value="1" step="1" id="col_oborydovania2" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Количество рабочих дней в году:</span>
+            <input type="number" min="1" max="366" value="247" step="1" id="day_year2" class="event_input" />
+          </div>
+        </div>
+        <div class="input-day">
+          <h4>Данные для затраты на силовую энергию</h4>
+          <div class="Day">
+            <span>Тариф на электроэнергию, руб./кВт ч:</span>
+            <input type="number" min="0" max="1000" value="2.6" step="0.1" id="tarif_energy" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Установленная мощность технических средств, кВт:</span>
+            <input type="number" min="0" max="1" value="0.4" step="0.001" id="moshnost" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Коэффициент использования установленной<br>мощности
+              оборудования:</span>
+            <input type="number" min="0" max="1" value="1" step="0.001" id="coef_moshnost" class="event_input" />
+          </div>
+        </div>
+        <div class="input-day">
+          <h4>Данные для затрат на текущий ремонт оборудования</h4>
+          <div class="Day">
+            <span>Норматив затрат на ремонт:</span>
+            <input type="number" min="0" max="1" value="0.05" step="0.001" id="remont" class="event_input" />
+          </div>
+        </div>
+        <div class="input-day">
+          <h4>Данные для затрат на накладные расходы</h4>
+          <div class="Day">
+            <span>Коэффициент накладых расходов:</span>
+            <input type="number" min="0" max="1" value="0.2" step="0.001" id="coef_naclad_rashod" class="event_input" />
+          </div>
+        </div>
+      </div>
+
+      <div class="Day">
+        <div class="input-day_2">
+          <h3>Годовые эксплуатационные затраты проекта:</h3>
+          <table class="table-pink">
+            <tr>
+              <th class="td2">Статьи затрат</th>
+              <th class="td2">Сумма, руб.</th>
+            </tr>
+            <tr>
+              <td>
+                Затраты на зарплату основную и дополнительную с отчислениями
+                во внебюджетные фонды, руб
+              </td>
+              <td>
+                <input type="number" value="69440" id="DPZPSP2" class="fifi" name="zatrata3" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Амортизационные отчисления от стоимости оборудования и
+                устройств системы, руб
+              </td>
+              <td>
+                <input type="number" value="1093.12" id="AOOSOIYS" class="fifi" name="zatrata3" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Затраты на силовую энергию, руб</td>
+              <td>
+                <input type="number" value="499.20" id="ZNSE" class="fifi" name="zatrata3" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Затраты на текущий ремонт оборудования и устройств системы,
+                руб
+              </td>
+              <td>
+                <input type="number" value="273.28" id="ZNTROIYS" class="fifi" name="zatrata3" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Затраты на материалы и машинные носители, руб</td>
+              <td>
+                <input type="number" value="225" id="ZNMIMN" class="fifi" name="zatrata3" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Накладные расходы информационного отдела, руб</td>
+              <td>
+                <input type="number" value="14306.12" id="NRIO" class="fifi" name="zatrata3" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>ИТОГО:</td>
+              <td>
+                <input type="number" value="85836.72" id="ITOG3" class="fifi" readonly />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="input-day_2">
+          <h3>Годовые эксплуатационные затраты программы-аналога:</h3>
+          <table class="table-pink">
+            <tr>
+              <th class="td2">Статьи затрат</th>
+              <th class="td2">Сумма, руб.</th>
+            </tr>
+            <tr>
+              <td>
+                Затраты на зарплату основную и дополнительную с отчислениями
+                во внебюджетные фонды, руб
+              </td>
+              <td>
+                <input type="number" value="112840" min="0" max="1000000" id="DPZPSA2" class="fifi" name="zatrata4"
+                  readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Амортизационные отчисления от стоимости оборудования и
+                устройств системы, руб
+              </td>
+              <td>
+                <input type="number" value="1821.86" min="0" max="1000000" id="AOOSOIYS2" class="fifi" name="zatrata4"
+                  readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Затраты на силовую энергию, руб</td>
+              <td>
+                <input type="number" value="832" min="0" max="1000000" id="ZNSE2" class="fifi" name="zatrata4"
+                  readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Затраты на текущий ремонт оборудования и устройств системы, руб
+              </td>
+              <td>
+                <input type="number" value="455.47" min="0" max="1000000" id="ZNTROIYS2" class="fifi" name="zatrata4"
+                  readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Затраты на материалы и машинные носители, руб</td>
+              <td>
+                <input type="number" value="225" id="ZNMIMN2" class="fifi" name="zatrata4" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Накладные расходы информационного отдела, руб</td>
+              <td>
+                <input type="number" value="23234.87" id="NRIO2" class="fifi" name="zatrata4" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>ИТОГО:</td>
+              <td>
+                <input type="number" value="139409.19" id="ITOG4" class="fifi" readonly />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="zagol">
+        <p class="zagolovok">
+          Расчет показателей экономической эффективности
+        </p>
+      </div>
+      <div class="Day">
+        <div class="input-day">
+          <h4>Данные для расчета экономического эффекта</h4>
+          <div class="Day">
+            <span>Объем работ, выполняемых с помощью разрабатываемого продукта:</span>
+            <input type="number" min="0" max="10000" value="1" step="1" id="obem_rabot" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Нормативный коэффициент экономической эффективности:</span>
+            <input type="number" min="0" max="1" value="0.33" step="0.01" id="norm_koef" class="event_input" />
+          </div>
+        </div>
+      </div>
+
+      <div class="Day">
+        <div class="input-day_2">
+          <h3>Экономический эффект проекта:</h3>
+          <table class="table-pink">
+            <tr>
+              <th class="td2">Статьи затрат</th>
+              <th class="td2">Сумма, руб.</th>
+            </tr>
+            <tr>
+              <td>Себестоимость (текущие эксплуатационные затраты), руб.</td>
+              <td>
+                <input type="number" value="85836.7" id="STEZ" class="fifi" name="zatrata3" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Суммарные затраты, связанные с внедрением проекта, руб.</td>
+              <td>
+                <input type="number" value="161797.07" id="SZSSVP" class="fifi" name="zatrata3" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Приведенные затраты на единицу работ, руб.</td>
+              <td>
+                <input type="number" value="139230.11" id="PZNER" class="fifi" name="zatrata3" readonly />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="input-day_2">
+          <h3>Экономический эффект аналога:</h3>
+          <table class="table-pink">
+            <tr>
+              <th class="td2">Статьи затрат</th>
+              <th class="td2">Сумма, руб.</th>
+            </tr>
+            <tr>
+              <td>Себестоимость (текущие эксплуатационные затраты), руб.</td>
+              <td>
+                <input type="number" value="139409" min="0" max="1000000" id="STEZ2" class="fifi" name="zatrata4"
+                  readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Суммарные затраты, связанные с внедрением проекта, руб.</td>
+              <td>
+                <input type="number" value="80800" min="0" max="1000000" id="SZSSVP2" class="fifi" name="zatrata4"
+                  readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Приведенные затраты на единицу работ, руб.</td>
+              <td>
+                <input type="number" value="166073" min="0" max="1000000" id="PZNER2" class="fifi" name="zatrata4"
+                  readonly />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="ety">
+        <ul class="calc-price-title">
+          <li>
+            <span class="fifi">Экономический эффект от использования разрабатываемой
+              системы:</span>
+            <input type="number" value="126487.83" id="EEOIRS" class="fifi" readonly />
+          </li>
+        </ul>
+      </div>
+
+      <div class="Day">
+        <div class="input-day_2">
+          <h3>Результаты экономического обоснования проекта:</h3>
+          <table class="table-pink">
+            <tr>
+              <th class="td2">Характеристика проекта</th>
+              <th class="td2">Значение</th>
+            </tr>
+            <tr>
+              <td>Затраты на разработку и внедрение проекта, руб.</td>
+              <td>
+                <input type="number" value="161797.07" id="SZSSVP1_2" class="fifi" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Общие эксплуатационные затраты, руб.</td>
+              <td>
+                <input type="number" value="85836.7" id="STEZ1_2" class="fifi" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Экономический эффект, руб</td>
+              <td>
+                <input type="number" value="126487.83" id="EEOIRS2" class="fifi" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Коэффициент экономической эффективности</td>
+              <td>
+                <input type="number" value="0.78" id="KEE" class="fifi" readonly />
+              </td>
+            </tr>
+            <tr>
+              <td>Срок окупаемости, лет</td>
+              <td>
+                <input type="number" value="1.28" id="SO" class="fifi" readonly />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <button class="btn ButtonKlick" onclick="ButtonKlick();">
+            Узнать эффективность проекта
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer footer-inner">
+    <div class="event">
+      <p class="footer-text">
+        © Кадочников Антон, 442-1
+      </p>
+    </div>
+  </footer>
+</body>
+<script src="main.js"></script>
+
+</html>
