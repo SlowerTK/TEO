@@ -183,6 +183,7 @@ function ZATRATI2(){
   let NRIO2 = document.querySelector('#NRIO2');
   let ITOG3 = document.querySelector('#ITOG3');
   let ITOG4 = document.querySelector('#ITOG4');
+  let coef = document.querySelector('#coef_potr_mater').value;
   
     AOOSOIYS.value =  parseFloat((balans2.value * amortizacia.value * col_oborydovania2.value) * ((parseInt(zatrata_time.value) + parseInt(zatrata_time2.value))* norm_zagryzka.value) / (norm_zagryzka.value * day_year2.value)).toFixed(2);
     AOOSOIYS2.value = parseFloat((balans2.value * amortizacia.value * col_oborydovania2.value) * ((parseInt(zatrata_time3.value) + parseInt(zatrata_time4.value))* norm_zagryzka.value) / (norm_zagryzka.value * day_year2.value)).toFixed(2);
@@ -190,8 +191,8 @@ function ZATRATI2(){
     ZNSE2.value = parseFloat(((parseInt(zatrata_time3.value) + parseInt(zatrata_time4.value))* hours_day.value) * tarif_energy.value *moshnost.value* coef_moshnost.value).toFixed(2);
     ZNTROIYS.value = parseFloat((balans.value * remont.value) * ((parseInt(zatrata_time.value) + parseInt(zatrata_time2.value))* hours_day.value) / (hours_day.value * day_year.value)).toFixed(2);
     ZNTROIYS2.value = parseFloat((balans.value * remont.value) * ((parseInt(zatrata_time3.value) + parseInt(zatrata_time4.value))* hours_day.value) / (hours_day.value * day_year.value)).toFixed(2);
-    ZNMIMN.value =  parseFloat(balans.value *0.01).toFixed(2);
-    ZNMIMN2.value = parseFloat(balans.value * 0.01).toFixed(2);
+    ZNMIMN.value =  parseFloat(balans.value * coef).toFixed(2);
+    ZNMIMN2.value = parseFloat(balans.value * coef).toFixed(2);
     NRIO.value = parseFloat((parseFloat(DPZPSP.value) + parseFloat(AOOSOIYS.value) + parseFloat(ZNSE.value)+ parseFloat(ZNTROIYS.value) + parseFloat(ZNMIMN.value) )* coef_naclad_rashod.value).toFixed(2);
     NRIO2.value = parseFloat((parseFloat(DPZPSA.value) + parseFloat(AOOSOIYS2.value) + parseFloat(ZNSE2.value)+ parseFloat(ZNTROIYS2.value) + parseFloat(ZNMIMN2.value) )* 0.2).toFixed(2);
     ITOG3.value = parseFloat(parseFloat(DPZPSP.value) + parseFloat(AOOSOIYS.value) + parseFloat(ZNSE.value)+ parseFloat(ZNTROIYS.value) + parseFloat(ZNMIMN.value) +parseFloat(NRIO.value)).toFixed(2);
@@ -278,6 +279,7 @@ document.addEventListener("input", function (event) {
       AValue = 0;
     }
     A.value = (Math.round(AValue * 100) / 100).toFixed(2);
+    document.querySelector('#A2').value = (Math.round(AValue * 100) / 100).toFixed(2);
 
   }
   UpdateData();

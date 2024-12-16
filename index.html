@@ -13,19 +13,20 @@
 <body>
   <div id="licenseModal">
     <div id="modalContent">
-        <h1>Лицензионное соглашение</h1>
-        <p>Прочитайте и примите условия использования:</p>
-        <textarea rows="10" style="width: 100%; resize: none; outline: none; box-shadow: none; border: none;" class=" noborder" readonly>
+      <h1>Лицензионное соглашение</h1>
+      <p>Прочитайте и примите условия использования:</p>
+      <textarea rows="10" style="width: 100%; resize: none; outline: none; box-shadow: none; border: none;"
+        class=" noborder" readonly>
 MIT License
 © Кадочников Антон 2024
 Разрешение предоставляется, бесплатно, всем желающим получить копию этого программного обеспечения и связанных с ним документаций(в дальнейшем именуемое "Программное обеспечение"), и использовать его без ограничений, включая, но не ограничиваясь правами на использование, копирование, изменение, слияние, публикацию, распространение, сублицензирование и / или продажу копий Программного обеспечения, и предоставлять лицам, которым предоставляется это Программное обеспечение, те же права, при условии, что вышеуказанное уведомление и это разрешение будут включены во все копии или значительные части Программного обеспечения.
 
 Программное обеспечение предоставляется "как есть", без каких - либо гарантий о его качестве, правомерности, применимости или пригодности для какой - либо цели.В частности, без каких - либо подразумеваемых гарантий.Разработчик не несет ответственности за любые претензии, убытки или другие обязательства, возникающие в результате использования или невозможности использования Программного обеспечения.
         </textarea>
-        <br><br>
-        <button id="agreeButton" class="">Я согласен</button>
+      <br><br>
+      <button id="agreeButton" class="">Я согласен</button>
     </div>
-</div>
+  </div>
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
@@ -735,7 +736,8 @@ MIT License
               <span>Количество рабочих дней в месяце:</span>
             </td>
             <td>
-              <input type="number" min="1" max="31" value="21" id="col_day" style="width: 100%;  box-sizing: border-box; " class="event_input centr " />
+              <input type="number" min="1" max="31" value="21" id="col_day"
+                style="width: 100%;  box-sizing: border-box; " class="event_input centr " />
             </td>
           </tr>
         </table>
@@ -780,13 +782,13 @@ MIT License
         </tr>
       </table>
       <div style="padding: 20px">
-        <span class="fifi">Итого ОЗП(руб.):</span>
+        <span class="fifi">Итого ОЗП, руб.:</span>
         <input type="number" value="64570.99" id="OZP" class="fifi noborder" readonly />
       </div>
       <!-- ------------------------------------------------------------------------------------------------------------- -->
       <div class="Day">
         <div class="input-day">
-          <h4>Затраты на дополнительную заработную плату</h4>
+          <h4>Коэффициенты на дополнительную заработную плату</h4>
           <div class="Day">
             <span>Коэффициент отпускных: </span>
             <input type="number" min="0" max="1" value="0.1" step="0.001" id="coef_otpysk" class="event_input" />
@@ -797,7 +799,7 @@ MIT License
           </div>
         </div>
         <div class="input-day">
-          <h4>Затраты отчисления на социальные нужды</h4>
+          <h4>Коэффициенты отчислений на социальные нужды</h4>
           <div class="Day">
             <span>Страховые взносы в Пенсионный фонд:</span>
             <input type="number" min="0" max="1" value="0.22" step="0.001" id="coef_PF" class="event_input" />
@@ -816,7 +818,7 @@ MIT License
           </div>
         </div>
         <div class="input-day">
-          <h4>Затраты на накладные расходы организации</h4>
+          <h4>Коэффициент накладых расходов</h4>
           <div class="Day">
             <span>Коэффициент, учитывающий накладные расходы<br />организации, в
               долях к основной заработной<br />плате разработчиков:</span>
@@ -824,7 +826,7 @@ MIT License
           </div>
         </div>
         <div class="input-day">
-          <h4>Затраты на машинное время</h4>
+          <h4>Данные затрат на машинное время</h4>
           <div class="Day">
             <span>Часы ежедневного проведения за компьютером программиста:</span>
             <input type="number" min="0" max="24" value="4" step="1" id="hours" class="event_input" />
@@ -836,34 +838,6 @@ MIT License
           <div class="Day">
             <span>Коэффициент мультипрограммности:</span>
             <input type="number" min="0" max="1" value="1" step="0.001" id="coef_multi" class="event_input" />
-          </div>
-        </div>
-        <div class="input-day">
-          <h4>Затраты на реализацию</h4>
-          <div class="Day">
-            <span>Балансовая стоимость оборудования, руб.:</span>
-            <input type="number" min="0" max="1000000" value="22500" step="1" id="balans" class="event_input" />
-          </div>
-          <div class="Day">
-            <span>Количество оборудования:</span>
-            <input type="number" min="1" max="100" value="1" step="1" id="col_oborydovania" class="event_input" />
-          </div>
-          <div class="Day">
-            <span>Трудоемкость однократной обработки информации<br />по тестовой
-              задаче, часов машинного времени:</span>
-            <input type="number" min="1" max="100" value="6" step="1" id="PM_inf" class="event_input" />
-          </div>
-          <div class="Day">
-            <span>Частота решения тестовой задачи, дней /год:</span>
-            <input type="number" min="1" max="366" value="247" step="1" id="chastota" class="event_input" />
-          </div>
-          <div class="Day">
-            <span>Количество рабочих дней в году:</span>
-            <input type="number" min="1" max="366" value="247" step="1" id="day_year" class="event_input" />
-          </div>
-          <div class="Day">
-            <span>Продолжительность рабочего дня в организации, ч.:</span>
-            <input type="number" min="1" max="24" value="8" step="1" id="hours_day" class="event_input" />
           </div>
         </div>
       </div>
@@ -932,11 +906,40 @@ MIT License
         <input type="number" value="1200" id="ZNM" class="fifi noborder" readonly />
         <span class="fifi">рублей</span>
       </div>
-
+      <div class="Day">
+        <div class="input-day_2">
+          <h4>Данные затрат на реализацию</h4>
+          <div class="Day">
+            <span>Балансовая стоимость оборудования, руб.:</span>
+            <input type="number" min="0" max="1000000" value="22500" step="1" id="balans" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Количество оборудования:</span>
+            <input type="number" min="1" max="100" value="1" step="1" id="col_oborydovania" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Трудоемкость однократной обработки информации<br />по тестовой
+              задаче, часов машинного времени:</span>
+            <input type="number" min="1" max="100" value="6" step="1" id="PM_inf" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Частота решения тестовой задачи, дней /год:</span>
+            <input type="number" min="1" max="366" value="247" step="1" id="chastota" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Количество рабочих дней в году:</span>
+            <input type="number" min="1" max="366" value="247" step="1" id="day_year" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Продолжительность рабочего дня в организации, ч.:</span>
+            <input type="number" min="1" max="24" value="8" step="1" id="hours_day" class="event_input" />
+          </div>
+        </div>
+      </div>
       <!-- ------------------------------------------------------------------------------------------------------------------ -->
       <div class="Day">
         <div class="input-day_2">
-          <h3>Суммарные затраты на разработку проекта:</h3>
+          <h3>Суммарные затраты на разработку и реализацию проекта:</h3>
           <table class="table-pink">
             <tr>
               <th class="td2">Статьи затрат</th>
@@ -1050,7 +1053,9 @@ MIT License
           <input type="number" min="0" max="1" value="0.3" step="0.001" id="coef_ragion2" class="event_input" />
         </div>
       </div>
-
+      <div>
+        <span class="fifi">Расчет заработной платы специалистов (для проекта):</span>
+      </div>
       <table class="">
         <tr class="">
           <th class="">Должность</th>
@@ -1085,10 +1090,13 @@ MIT License
       </table>
 
       <div>
-        <span class="fifi">Итого данные по заработной плате специалистов (для проекта):</span>
+        <span class="fifi">Итого, руб:</span>
         <input type="number" value="69440" id="DPZPSP" class="fifi noborder" readonly />
       </div>
-
+      <div class="otstup"></div>
+      <div>
+        <span class="fifi">Расчет заработной платы специалистов (для продукта-аналога):</span>
+      </div>
       <table class="">
         <tr class="">
           <th class="">Должность</th>
@@ -1123,8 +1131,7 @@ MIT License
       </table>
 
       <div>
-        <span class="fifi">Итого данные по заработной плате специалистов (для
-          продукта-аналога):</span>
+        <span class="fifi">Итого, руб:</span>
         <input type="number" value="112840" id="DPZPSA" class="fifi noborder" readonly />
       </div>
 
@@ -1163,8 +1170,7 @@ MIT License
             <input type="number" min="0" max="1" value="0.4" step="0.001" id="moshnost" class="event_input" />
           </div>
           <div class="Day">
-            <span>Коэффициент использования установленной<br>мощности
-              оборудования:</span>
+            <span>Коэффициент использования установленной<br>мощности оборудования:</span>
             <input type="number" min="0" max="1" value="1" step="0.001" id="coef_moshnost" class="event_input" />
           </div>
         </div>
@@ -1180,6 +1186,10 @@ MIT License
           <div class="Day">
             <span>Коэффициент накладых расходов:</span>
             <input type="number" min="0" max="1" value="0.2" step="0.001" id="coef_naclad_rashod" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Затраты на материалы, потребляемые в течение года:</span>
+            <input type="number" min="0" max="1" value="0.01" step="0.01" id="coef_potr_mater" class="event_input" />
           </div>
         </div>
       </div>
@@ -1259,8 +1269,8 @@ MIT License
                 во внебюджетные фонды, руб
               </td>
               <td>
-                <input type="number" value="112840" min="0" max="1000000" id="DPZPSA2" class="fifi noborder" name="zatrata4"
-                  readonly />
+                <input type="number" value="112840" min="0" max="1000000" id="DPZPSA2" class="fifi noborder"
+                  name="zatrata4" readonly />
               </td>
             </tr>
             <tr>
@@ -1269,8 +1279,8 @@ MIT License
                 устройств системы, руб
               </td>
               <td>
-                <input type="number" value="1821.86" min="0" max="1000000" id="AOOSOIYS2" class="fifi noborder" name="zatrata4"
-                  readonly />
+                <input type="number" value="1821.86" min="0" max="1000000" id="AOOSOIYS2" class="fifi noborder"
+                  name="zatrata4" readonly />
               </td>
             </tr>
             <tr>
@@ -1285,8 +1295,8 @@ MIT License
                 Затраты на текущий ремонт оборудования и устройств системы, руб
               </td>
               <td>
-                <input type="number" value="455.47" min="0" max="1000000" id="ZNTROIYS2" class="fifi noborder" name="zatrata4"
-                  readonly />
+                <input type="number" value="455.47" min="0" max="1000000" id="ZNTROIYS2" class="fifi noborder"
+                  name="zatrata4" readonly />
               </td>
             </tr>
             <tr>
@@ -1326,6 +1336,10 @@ MIT License
           <div class="Day">
             <span>Нормативный коэффициент экономической эффективности:</span>
             <input type="number" min="0" max="1" value="0.33" step="0.01" id="norm_koef" class="event_input" />
+          </div>
+          <div class="Day">
+            <span>Коэффициент технического совершенства:</span>
+            <input type="number" value="1.60" id="A2" class="event_input noborder" readonly />
           </div>
         </div>
       </div>
@@ -1369,22 +1383,22 @@ MIT License
             <tr>
               <td>Себестоимость (текущие эксплуатационные затраты), руб.</td>
               <td>
-                <input type="number" value="139409" min="0" max="1000000" id="STEZ2" class="fifi noborder" name="zatrata4"
-                  readonly />
+                <input type="number" value="139409" min="0" max="1000000" id="STEZ2" class="fifi noborder"
+                  name="zatrata4" readonly />
               </td>
             </tr>
             <tr>
               <td>Суммарные затраты, связанные с внедрением проекта, руб.</td>
               <td>
-                <input type="number" value="80800" min="0" max="1000000" id="SZSSVP2" class="fifi noborder" name="zatrata4"
-                  readonly />
+                <input type="number" value="80800" min="0" max="1000000" id="SZSSVP2" class="fifi noborder"
+                  name="zatrata4" readonly />
               </td>
             </tr>
             <tr>
               <td>Приведенные затраты на единицу работ, руб.</td>
               <td>
-                <input type="number" value="166073" min="0" max="1000000" id="PZNER2" class="fifi noborder" name="zatrata4"
-                  readonly />
+                <input type="number" value="166073" min="0" max="1000000" id="PZNER2" class="fifi noborder"
+                  name="zatrata4" readonly />
               </td>
             </tr>
           </table>
@@ -1394,8 +1408,7 @@ MIT License
       <div class="ety">
         <ul class="calc-price-title">
           <li>
-            <span class="fifi">Экономический эффект от использования разрабатываемой
-              системы:</span>
+            <span class="fifi">Экономический эффект от использования разрабатываемой системы, руб:</span>
             <input type="number" value="126487.83" id="EEOIRS" class="fifi noborder" readonly />
           </li>
         </ul>
@@ -1416,7 +1429,7 @@ MIT License
               </td>
             </tr>
             <tr>
-              <td>Общие эксплуатационные затраты, руб.</td>
+              <td>Общие эксплуатационные <br>затраты, руб.</td>
               <td>
                 <input type="number" value="85836.7" id="STEZ1_2" class="fifi noborder" readonly />
               </td>
@@ -1441,7 +1454,7 @@ MIT License
             </tr>
           </table>
         </div>
-        <div class="input-day"  >
+        <div class="input-day">
           <h3>Эффективность проекта</h3>
           <table class="table-pink" style="margin-top: 41px;">
             <tr>
@@ -1449,7 +1462,8 @@ MIT License
                 <input type="text" value="-" id="EFFECTIVNOST" class="fifi noborder" style="width: 100%;" readonly />
               </td>
             </tr>
-        </table>
+          </table>
+        </div>
       </div>
     </div>
   </main>
