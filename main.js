@@ -328,3 +328,8 @@ function addRow2() {
   table.appendChild(newRow);
   SumZatratsZaMateriali();
 }
+document.getElementById('agreeButton').addEventListener('click', function () {
+  const modal = document.getElementById('licenseModal');
+  modal.parentNode.removeChild(modal); // Убираем модальное окно
+  document.body.style.overflow = 'auto'; // Восстанавливаем прокрутку
+});

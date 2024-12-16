@@ -1,3 +1,48 @@
+body {
+    overflow: hidden; /* Запрет прокрутки */
+}
+
+#licenseModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#modalContent {
+    background: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#agreeButton {
+    border: 1px solid #1F1E1E;
+    background-color: transparent;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s;
+    text-wrap: nowrap;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#agreeButton:hover {
+    color: #FFFFFF;
+    background-color: #BC3324;
+    border: 1px solid #BC3324;
+}
+
 html,
 body {
     margin: 0;
