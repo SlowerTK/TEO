@@ -39,8 +39,8 @@ body {
 
 #agreeButton:hover {
     color: #FFFFFF;
-    background-color: #BC3324;
-    border: 1px solid #BC3324;
+    background-color: #343687;
+    border: 1px solid #343687;
 }
 
 html,
@@ -65,7 +65,7 @@ body {
     left: 0;
     width: 100%;
     height: 80px;
-    background: rgba(222, 222, 222, 0.5);
+    background: #f8e1c350;
     backdrop-filter: blur(20px);
     z-index: 10;
 }
@@ -114,11 +114,11 @@ body {
 }
 
 .page-header__nav-link:hover {
-    color: #BC3324;
+    color: #343687;
 }
 
 .page-header__nav-link:active {
-    color: #BC3324;
+    color: #343687;
 }
 
 .btn {
@@ -148,8 +148,8 @@ body {
 .btn:active,
 .btn:hover {
     color: #FFFFFF;
-    background-color: #BC3324;
-    border: 1px solid #BC3324;
+    background-color: #343687;
+    border: 1px solid #343687;
 }
 
 .main {
@@ -167,7 +167,7 @@ body {
     padding-bottom: 40px;
 }
  H4{
-    color: #BC3324;
+    color: #343687;
  }
 .table-graphic,
 .table-graphic__th,
@@ -198,8 +198,8 @@ body {
     /* height: 20px; */
 }
 table{
-    border: 1px solid #eaeaea;
-    background-color: #e8e8e8;
+    border: 1px solid #f8e1c3;
+    background-color: #f8e1c3;
     padding: 20px;
     border-radius: 12px;
     
@@ -233,11 +233,22 @@ input,
     padding: 0;
     margin: 0;
     background-color: transparent;
-    border: 0px solid #1F1E1E;
+    border: 0px solid #1F1E1E15;
+}
+.noborder,
+.noborder:focus {
+    color:#343687;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
+
 .st0 {
-    fill:#EF3E42;
+    fill:#47ef3e;
 }
 
 .st1 {
@@ -281,7 +292,7 @@ input,
 	border: none;
     text-align: center;
 	font-size: 20px;
-	color: #BC3324;
+	color: #343687;
     width: 110px;
 }
 
@@ -316,8 +327,8 @@ input,
 }
 
 .spratat {
-    color: #e8e8e8;
-    border-color: #e8e8e8;
+    color: #f8e1c3;
+    border-color: #f8e1c3;
     max-width: 20px;
 }
 
@@ -331,7 +342,7 @@ input,
 }
 
 h3 {
-    color: #BC3324;
+    color: #343687;
     font-size: 30px;
     margin-top: 100px;
 }
@@ -341,7 +352,7 @@ h3 {
 }
 
 .table-pink {
-    background-color: #cfcdcd;
+    background-color: #f8e1c3;
     border-radius: 30px;
     margin-bottom: 80px;
 
@@ -353,17 +364,17 @@ h3 {
 
 .zagolovok {
     font-size: 30px;
-	color: #BC3324;
+	color: #343687;
     text-align: center;
     font-weight: 600;
     padding: 30px 0 30px 0;
     margin: 0;
-    background-color: #e8e8e8;
+    background-color: #f8e1c3;
     border-radius: 12px;
 }
 
 hr {
-    background-color: #BC3324;
+    background-color: #343687;
     border: none;
     height: 3px;
     width: 100%;

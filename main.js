@@ -2,7 +2,6 @@ const calculateValue = (b, x) => {
   let temp = parseFloat(b) * parseFloat(x);
   return !isNaN(temp) ? (Math.round(temp * 100) / 100).toFixed(2) : "";
 };
-
 const updateValues = (index) => {
   let b = document.getElementById(`B${index}`).value;
   let x = document.getElementById(`X${index}`).value;
@@ -13,8 +12,6 @@ const updateValues = (index) => {
   let altbx = document.getElementById(`altBX${index}`);
   altbx.value = calculateValue(b, altx);
 };
-
-
 function changeTime1_1R() {
   if(document.querySelector('#td1_1').value == 0){document.querySelector('#td1_3').value = "-";}
   else{var time = new Date(document.querySelector('#td1_2').value);
@@ -28,7 +25,6 @@ function changeTime1_1P() {
     time.setDate(time.getDate() + (parseInt(document.querySelector('#td1_4').value)-1));
     document.querySelector('#td1_5').value = time.toLocaleDateString();}
 }
-
 function changeTimePER(a,b,c,d,y,z) {
   let _a = document.getElementById(a);
   let _b = document.getElementById(b);
@@ -52,7 +48,6 @@ function changeTimePER(a,b,c,d,y,z) {
   date.setDate(date.getDate() + parseInt(_y.value) - 1);
   _d.value = date.toLocaleDateString();
 }
-
 function DaySum() {
   let PM = 0, TM = 0;
   const num1 = document.querySelectorAll('input[name="r"]');
@@ -202,7 +197,6 @@ function ZATRATI2(){
     ITOG3.value = parseFloat(parseFloat(DPZPSP.value) + parseFloat(AOOSOIYS.value) + parseFloat(ZNSE.value)+ parseFloat(ZNTROIYS.value) + parseFloat(ZNMIMN.value) +parseFloat(NRIO.value)).toFixed(2);
     ITOG4.value = parseFloat(parseFloat(DPZPSA.value) + parseFloat(AOOSOIYS2.value) + parseFloat(ZNSE2.value)+ parseFloat(ZNTROIYS2.value) + parseFloat(ZNMIMN2.value) +parseFloat(NRIO2.value)).toFixed(2);
 }
-
 function Effectivnost(){
   let obem_rabot = document.querySelector('#obem_rabot');
   var norm_koef = document.querySelector('#norm_koef');
@@ -227,21 +221,11 @@ function Effectivnost(){
   SZSSVP2.value = parseFloat(ITOG2.value).toFixed(2);
   PZNER.value = parseFloat(parseFloat(ITOG3.value) + parseFloat(norm_koef.value) * parseFloat(ITOG.value)).toFixed(2);
   PZNER2.value = parseFloat(parseFloat(ITOG4.value) + parseFloat(norm_koef.value) * parseFloat(ITOG2.value)).toFixed(2);
-  EEOIRS.value = parseFloat((parseFloat(PZNER2.value) * parseFloat(KTS.value) - parseFloat(PZNER.value)) * parseFloat(obem_rabot.value)).toFixed(2);
-  EEOIRS2.value = parseFloat((parseFloat(PZNER2.value) * parseFloat(KTS.value) - parseFloat(PZNER.value)) * parseFloat(obem_rabot.value)).toFixed(2);
+  EEOIRS.value = parseFloat((parseFloat(PZNER2.value) * parseFloat(A.value) - parseFloat(PZNER.value)) * parseFloat(obem_rabot.value)).toFixed(2);
+  EEOIRS2.value = parseFloat((parseFloat(PZNER2.value) * parseFloat(A.value) - parseFloat(PZNER.value)) * parseFloat(obem_rabot.value)).toFixed(2);
   SO.value = parseFloat(parseFloat(SZSSVP1_2.value)/parseFloat(EEOIRS2.value)).toFixed(2);
   KEE.value = parseFloat(1/parseFloat(SO.value)).toFixed(2);
 }
-
-function ButtonKlick(){
-  if(KEE.value>norm_koef.value){
-    alert("Эффективнее разрабатывать собственный проект");
-  }
-  else{
-    alert("Эффективнее покупать аналог");
-  }
-}
-
 function UpdateData(){
   changeTime1_1R();
   changeTime1_1P();
@@ -253,6 +237,14 @@ function UpdateData(){
   ZATRATI();
   ZATRATI2();
   Effectivnost();
+
+  if(KEE.value>norm_koef.value){
+    document.querySelector('#EFFECTIVNOST').value = "Эффективнее разрабатывать собственный проект";
+  }
+  else{
+    document.querySelector('#EFFECTIVNOST').value = "Эффективнее покупать аналог";
+  }
+  
 }
 
 
@@ -330,6 +322,6 @@ function addRow2() {
 }
 document.getElementById('agreeButton').addEventListener('click', function () {
   const modal = document.getElementById('licenseModal');
-  modal.parentNode.removeChild(modal); // Убираем модальное окно
-  document.body.style.overflow = 'auto'; // Восстанавливаем прокрутку
+  modal.parentNode.removeChild(modal);
+  document.body.style.overflow = 'auto';
 });
